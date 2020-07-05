@@ -1,0 +1,459 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Home</title>
+
+	<style>
+
+
+ *box-sizing-border-box;
+
+
+.container{
+	max-width:800px;
+	margin: 0 auto;
+	//background-color: red;
+    border:1px solid #dedede;
+    padding: 15px;
+}
+body{
+	margin: 0;
+}
+
+.logo{
+
+	float: left;
+}
+
+.userarea{
+
+    padding-top: 30px;
+	float:right;
+
+}
+
+
+
+.clearfix{
+
+	clear: both;
+}
+
+
+ .userarea a{
+
+display: inline-block;
+padding:15px 20px;
+background-color: green;
+line-height: 20px;
+color: white;
+font-family: sans-serif;
+text-decoration: none;
+border-radius: 7px;
+transition: all .25s;
+
+
+}
+
+ .userarea a:hover{
+background-color: orange;
+
+ 	}
+
+
+.menu{
+  max-width: 100%;
+display:inline-block;
+z-index: 999;
+}
+
+.menu ul{
+
+	padding:0;
+	margin:0;
+}
+
+
+
+.menu li {
+	float: left;
+	list-style: none;
+	font-size:30px;
+	position: relative;
+}
+
+
+
+.menu>ul>li{
+	float-left;
+	list-style: none;
+	position: relative;
+}
+
+
+
+.menu li>.sub-menu{
+
+	position: absolute;
+	top:20;
+	left: 14px;
+	z-index: 999;
+
+	}
+
+.sub-menu li{
+position: relative;
+}
+
+.sub-menu{
+	//background-color:black;
+	width: 146px;
+	display: none;
+}
+
+.sub-menu a{
+	width: 100%;
+}
+
+
+.sub-menu>li>.sub-menu{
+
+	top: 0;
+	left: 110%;
+	display: none!important;
+}
+
+
+.menu>ul>li:hover .sub-menu{
+
+display: block;
+
+}
+
+
+.sub-menu>li:hover> .sub-menu{
+
+display: block!important;
+
+}
+
+.menu li a{
+
+
+
+    display: block;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #caca;
+    padding: 2px 17px;
+}
+
+.menu li a:hover{
+background-color:black;
+color: white;
+
+}
+
+.text-center{
+
+text-align:center;
+}
+
+.banner{
+
+	margin-left: 14px;
+	font-size: 5px;
+	padding:15px 0;
+	z-index: 0;
+
+}
+
+
+
+
+.banner .item{
+	position: relative;
+    overflow: hidden;
+}
+
+.banner .item-title{
+
+	position: absolute;
+	left:0;
+	right:0;
+	bottom: 60px;
+	background:rgba(193, 204, 170, 0.35);
+	 margin:0;
+	padding:15px;
+	color: white;
+      opacity: 0;
+     transition : all .25s;
+
+
+
+}
+
+h1{
+
+ font-size: 30px;
+
+}
+
+.banner  .item:hover .item-title{
+
+	bottom: 3px;
+	opacity:1;
+}
+.row{
+
+	margin-left: 14px;
+	margin-right: 4.4px;
+}
+
+.col-4{
+	width:25%;
+	float: left;
+	padding: -5px 15px;
+	font-size: 14px;
+
+}
+
+ 
+ .col-4 article{
+
+
+ 		//background-color:  red;
+ }
+
+
+
+p{
+
+	font-size: 25px;
+
+}
+
+.post.post-title a{
+
+margin:5px 0px;
+}
+
+.post .post-tittle+p{
+
+	margin-top: 0;
+}
+
+
+.post .post-title a{
+
+	color: black;
+	display:inline-block;
+	width:100%;
+	text-decoration: none;
+	transition: all .25s
+}
+
+.post .post-title a:hover{
+
+	color:blue;
+}
+
+.copyright{
+	background-color: orange;
+
+	text-align: center;
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+	 </style>
+</head>
+<body>
+	
+<div class="container">
+
+	<div class="header">
+
+		<div class="logo">
+			
+
+			<img src="C:\Users\Nirob Hasan\Documents\background-material-design-for-lorem-ipsum-logo-png_89719.jpg"height="100">
+		</div>
+
+ 
+ <div class="userarea">
+ 	<a href="">Log in </a>or
+ 	<a href="">sign up </a>
+	</div>
+<div class="clearfix"></div>
+
+
+</div>
+
+
+
+
+<div class="menucontainer">
+	<nav class="menu">
+
+		<ul>
+			<li><a href="Home.html"</a>Home</a></li>
+			<li><a href="About us.html"</a>About us</a></li>
+			<li><a href="Our work.html"</a>Our work</a></li>
+			<li><a href="contact us.html"</a>contact us</a></li>
+
+
+				<li>
+				<a href="#">Others</a>
+        
+                 <ul class="sub-menu">
+                 	<li><a href="single.html">Single page</a></li>
+
+                 	<li><a href="blog.html">Our blog</a></li>
+
+                 	<li>
+                 		<a href="#">Another menu</a>
+
+
+                           <ul class="sub-menu">
+                 	<li><a href="single.html">Single page</a></li>
+
+                 	<li><a href="blog.html">Our blog</a></li>
+
+                 	<li>
+
+                 		</li>
+
+                 </ul>
+
+			</li>
+
+		</ul>	
+
+      </nav>
+</div>
+
+
+
+ <div class="banner">
+<div class="item">
+ 	<img src="C:\Users\Nirob Hasan\Documents\6-28-18_0112-960px-800x641.jpg"height="300px"width="990px">
+<h1 class="item-title">Natural beuty of Bangladesh</h1>
+
+</div>
+ </div>
+
+
+
+
+
+ <div class="latest-post-sec">
+ 	<div class="row">
+ 
+ 	<div class="col-4">
+ 			<article class="post">
+
+ 		<img src="C:\Users\Nirob Hasan\Documents\boat-164989_960_720.webp"alt="post1"height="100px"width="190px">
+ 		<h2 class="post-title">
+            	<a href="single.html">
+            post title will be here
+        </a>
+ 		</h2>
+
+ 		<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+ 		</p>
+
+</article>
+ 	</div>
+
+
+	<div class="col-4">
+ 			<article class="post">
+ 				
+ 		<img src="C:\Users\Nirob Hasan\Documents\images (1).jpg"alt="post2"height="102px"width="190px">
+ 		<h2 class="post-title">
+            	<a href="single.html">
+            post title will be here
+        </a>
+ 		</h2>
+
+ 		<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ 		</p>
+
+</article>
+ 	</div>
+
+ 		<div class="col-4">
+ 			<article class="post">
+ 				
+ 		<img src="C:\Users\Nirob Hasan\Documents\images (2).jpg"alt="post3"height="100px"width="190px">
+ 		<h2 class="post-title">
+            	<a href="single.html">
+            post title will be here
+        </a>
+ 		</h2>
+
+ 		<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ 		</p>
+
+</article>
+ 	</div>
+
+<div class="col-4">
+ 			<article class="post">
+ 				
+ 		<img src="C:\Users\Nirob Hasan\Documents\tree-99852_960_720.jpg"alt="post4"height="100px"width="190px">
+ 		
+ 		<h2 class="post-title">
+            	<a href="single.html">
+            post title will be here
+        </a>
+ 		</h2>
+
+ 		<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ 		</p>
+
+</article>
+ 	</div>
+
+
+
+
+
+
+</div>
+
+ </div>
+
+<div class="clearfix"></div>
+
+</div>
+
+
+
+
+
+<footer class="copyright text-center">
+
+&copy;2020-LL rights reserved by<a href="#">Developer</a>
+
+</footer>
+
+</body>
+</div>
+</body>
+
+
+</html>

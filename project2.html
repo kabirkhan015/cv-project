@@ -1,0 +1,583 @@
+
+<!Doctype html>
+<html>
+<head>
+            <title>project2</title>
+		
+	
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<style>
+
+  
+
+
+
+		*{
+		
+		padding:0;
+		margin:0;
+		
+		}
+		
+	   header  {
+		
+		width:960px;
+		height:auto;
+		margin:0 auto;
+		}
+		.nav{
+	
+			width:960px;
+		    height:auto;
+			background:black;
+	}		
+			
+	      .nav ul{
+      padding:0;
+	  margin:0;
+	  text-align:center;
+	 word-spacing:4px;
+  }
+     
+	
+	
+	
+		.nav ul li{
+		list-style:none;
+	    display:inline-block;
+		position:relative;
+		}
+		
+  	.nav ul li a{
+	        display:block;
+			padding:20px 20px;
+			font-size:25px;
+            font-weight:bold;
+            color:white;
+          	text-transform:uppercase;		
+          	text-decoration:none;
+	}		
+
+	.nav ul li a:hover{
+	color:yellow;
+	background:red;
+	}
+	
+	.nav ul li ul {
+	position:absolute;
+	background:black;
+	left:-9999px;
+	
+	}
+	
+	.nav ul li:hover ul;{
+	
+	left:0px
+	}
+	
+	.nav ul li ul{
+	
+	position:absolute;
+	background:#000;
+	left:-9999px;
+	}
+	
+	.nav ul li:hover ul{
+	left:0px;
+	}
+	
+	.nav ul li ul li{
+	width:200px;
+	border-bottom:1px solid #fff;
+	}
+	
+	.banner-cover{
+	height:50vh;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no repeat;
+	
+	}
+
+	
+	.banner-text{
+	padding:10px;
+
+	text-align:center;
+	
+	}
+	button{
+	
+	  padding: 15px 32px;
+	
+	margin: 4px 2px;
+	 cursor: pointer;
+	background-color:black;
+	color:White ;
+	}
+	
+	.about-logo img{
+	
+	height:160px;
+      width:180px;
+box-shadow:2px 8px 10px 3px #000;
+margin-left:-20px;
+margin-top:28px;
+
+	}
+
+.about-section{
+
+background:#DCE7E5;
+padding:40px 0px;
+margin-top:20px;
+
+}
+
+
+.about-text h2{
+font-size:25px;
+font-weight:bold;
+text-transform:uppercase;
+border-bottom:2px solid black;
+text-align:center;
+
+}
+.about-text p{
+font-size:16px;
+color:gray;
+
+
+}
+
+
+	.col{
+	
+	float:left;
+	padding:0px 20px;
+
+	}
+	.title{
+	width:220px;
+	height:auto;
+	margin:0 auto;
+	
+	}
+		.title h2{
+		
+		font-size:20px;
+		font-weight:bold;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		border-bottom:2px solid white;
+		text-align:center;
+	
+    margin-bottom:30px;
+		
+		}
+		
+  .service {
+
+        width:280px;
+		height:auto;
+		border:1px solid #fff;
+		text-align:center;
+		display:inline-block;
+		margin:10px;
+
+ }  
+ 
+ .service h3{
+ font-size:20px;
+ font-weight:bold;
+ margin-bottom:10px;
+ text-transform:uppercase;
+ 
+ 
+ }
+ 
+ 
+ .service p{
+ font-size:15px;
+ color:gray;
+ line-height:22px;
+ padding:0px 15px;
+ 
+ }
+ .service-section{
+ 
+ background:#B7BBB2;
+ padding:40px 0px;
+margin-top:20px;
+ 
+ }
+	
+	.serv-icon {
+	
+	font-size:40px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#fff;
+	transition:.5s;
+	
+	}
+	.serv-icon :hover{
+	
+	color:yellow;
+	transform:scale(.8);
+	
+	}
+	.contact{
+	
+	background:#fff;
+	padding:15px 15px 15px 80px;
+	box-shadow:0px 0px 10px  #ccc;
+	width:180px;
+	position:relative;
+	display:inline-block;
+	margin:0px 8px;
+	}
+	
+	
+	.cont-icon {
+
+	position:absolute;
+	width:50px;
+	height:50px;
+	float:left;
+	top :8px;
+	left:15px;
+	background:#222;
+	text-align:center;
+	line-height:50px;
+	font-size:30px;
+	transition:.5s;
+	color:white;
+	}
+	
+		.cont-icon:hover{
+		color:yellow;
+		transform:scale(.8);
+		
+		}
+
+.cont-text p{
+padding:0;
+margin:0;
+font-size:16px;
+line-height:20px;
+
+}
+	.contact-section{
+	
+	background:#caca;
+	padding:40px 0px;
+	
+	
+	}	
+	
+	.contact-form{
+	width:620px;
+	height:auto;
+	margin:0 auto;
+	margin-top:30px;
+		
+	}
+		
+ .inputTag input{
+ 
+ font-size:20px;
+ text-transform:capitalize;
+ padding:10px 10px;
+ width:80%;
+ border:0;
+ margin:8px 0px;
+
+ }
+  .inputTag textarea{
+  width:518px;
+  height:auto;
+  border:0;
+  
+  }
+  .inputTag  button{
+      width:83.3%;
+     padding:10px 0px;
+	 background:black;
+	 font-size:20px;
+	 font-weight:bold;
+	 text-transform:uppercase;
+	 margin-bottom:4px;
+	 border:0;
+	 
+  }
+  
+  footer{
+  width:960px;
+  margin:0 auto;
+  height:auto;
+  background:black;
+  color:white;
+  padding:30px 0px;
+  
+  }
+  
+  .footer-icon{
+  float:right;
+  font-size:30px;
+	padding: 0px 20px;
+	transition:.5s;
+
+  }
+  
+
+	.footer-icon :hover{
+	color:yellow;
+	transform:scale(.8);
+	
+	}
+	.footer-text{
+
+font-size:30px;
+font-weight:bold;
+text-transform:uppercase;
+margin-top:px;
+
+}
+ 
+		</style>
+		
+</head>
+
+ <body>
+   
+         <header>
+    
+  <div class="nav">
+    <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">about</a></li>
+	      <li><a href="">service</a>
+		  
+		  </li>
+		  <li><a href="">portfolio</a>
+		  
+		  <ul>
+		  <li><a href="">home</a></li>
+          <li><a href="">about</a></li>
+	      <li><a href="">service</a></li>
+		   <li><a href="">blog</a></li>
+		  <li><a href="">contact</a></li>
+		  </ul>
+		  
+		  </li>
+		  
+      
+          <li><a href="">blog</a></li>
+		  <li><a href="">contact</a></li>
+		  
+		</ul>
+
+ </div>
+
+
+<div class="banner-cover">
+
+     <img src ="C:\Users\Nirob Hasan\Documents\64589777-man-working-on-laptop-computer-businessman-with-finance-idea-cartoon-vector-illustration.jpg"height="400px"width="960px">
+
+
+</div>
+
+<div class="banner-text">  
+
+<button type="Submit" >Clear</button>
+ <button type="Submit">Mordern</button>
+  <button type="Submit">responsive</button>
+ 
+   
+ 
+</div>
+<div class="about-section">
+<div class="title">
+<h2>About us</h2>
+
+
+</div>
+<div class="about">
+
+<div class="col">
+<div class="about-logo">
+<img src="C:\Users\Nirob Hasan\Documents\images.jpg">
+</div>
+</div>
+</div  class="col">
+<div class="about-text">
+<h2>Loram ipsum dolor site</h2>
+<p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
+
+</p>
+</div> 
+</div>
+</div>
+
+</div>
+
+
+<div class="service-section">
+<div class="title">
+<h2>our service</h2>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fab fa-html5"></i>
+
+</div>
+<h3> Web Design</h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fab fa-php"></i>
+
+</div>
+<h3> Web Development</h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fab fa-android"></i>
+
+</div>
+<h3>Apps development </h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fas fa-camera"></i>
+
+</div>
+<h3> Photography</h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fas fa-handshake"></i>
+
+</div>
+<h3> branding</h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+</div>
+
+
+<div class="service">
+<div class="serv-icon">
+<i class ="fab fa-wordpress"></i>
+
+</div>
+<h3> Theme development</h3>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
+
+
+
+
+</div>
+
+</div>
+
+<div class="contact-section">
+<div class="title">
+
+<h2>contact us</h2>
+</div>
+
+          <div class="contact">
+		  <div class="cont-icon">
+		  <i class="fas fa-phone"></i>
+		  </div>
+		  <div class="cont-text">
+		  <p>+8801886342122</p>
+		  <p>+8801720355156</p>
+		  </div>
+</div>
+          
+		  <div class="contact">
+		  <div class="cont-icon">
+		  <i class="fas fa-envelope"></i>
+		  </div>
+		  <div class="cont-text">
+		  <p>Kabirkhank015@gmail.com</p>
+		  <p>Kabirkhank141@gmail.com</p>
+		  </div>
+		  
+	
+</div>
+
+	  <div class="contact">
+		  <div class="cont-icon">
+		  <i class="fas fa-map-marker-alt"></i>
+		  </div>
+		  <div class="cont-text">
+		  <p>Pabna,monusrabad</p>
+		  <p>6600 pabna</p>
+		  </div>
+		  </div>
+		  <form>
+		  <div class="contact-form">
+		  
+		 <div class="inputTag" ><input type="text" placeholder="Your name"></div>
+		  <div class="inputTag" > <input type="email" placeholder="Your subject">
+		   <div class="inputTag" ><input type="text" placeholder="Your Email">
+
+		   <div class="inputTag" ><textarea rows="20" cols="50px"></textarea>
+		  
+		  <div class="inputTag" > <button  class="submit">submit</button>
+		  </div>
+		  </form>
+</div>
+ </header> 
+ <footer>
+ <div class="footer-text">
+ <p>Copy right by &copy Kabir khan</p>
+
+   </div>
+             <div class="footer-icon">
+			 
+               <i class="fab fa-facebook"></i>
+               <i class="fab fa-youtube"></i>
+	           <i class="fab fa-twitter"></i>
+	           <i class="fab fa-instagram"></i>
+	           <i class="fab fa-linkedin"></i>
+	
+   </div>
+ 
+ 
+  </footer>
+
+</body>
+
+
+ 
+</html> 
